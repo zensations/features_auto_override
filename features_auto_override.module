@@ -1,0 +1,18 @@
+<?php
+/**
+ * @file
+ * Automatically add overrides of any other features to a feature.
+ */
+
+/**
+ * Implements hook_features_api().
+ */
+function features_auto_override_features_api() {
+  return array(
+    'features_auto_override' => array(
+      'name' => t('Auto Override Features'),
+      'features_source' => TRUE,
+      'file' => drupal_get_path('module', 'features_auto_override') . 'features_auto_override.features.inc',
+    ),
+  );
+}

@@ -1,0 +1,6 @@
+name = "Features Auto Override"
+description = "Automatically add overrides to a feature."
+core = 7.x
+package = "Features"
+dependencies[] = features
+dependencies[] = features_override
